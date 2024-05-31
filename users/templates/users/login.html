@@ -4,7 +4,7 @@
     <div class="content-section bg-primary">
         <form method="POST">
             {% csrf_token %}
-            <fieldset class="form-group" >
+            <fieldset class="form-group">
                 <legend class="border-bottom mb-4 bg-success" style="color: white;">Login</legend>
                 {{ form|crispy }}
             </fieldset>
@@ -14,8 +14,10 @@
         </form>
         <div class="border-top pt-3">
             <small class="text-muted">
-                <h5 style="color: white;">Don't have an account?</h5> <a class="ml-2 btn btn-success" href="{% url 'register' %}" style="color: white;">Register Now.</a>
+                <h5 style="color: white;">Don't have an account?</h5>
+                <a class="ml-2 btn btn-success" href="{% url 'register' %}" style="color: white;">Register Now.</a>
             </small>
         </div>
     </div>
 {% endblock content %}
+
